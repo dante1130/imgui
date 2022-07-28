@@ -8,6 +8,7 @@ add_library(imgui STATIC
 	imgui_tables.cpp
 	backends/imgui_impl_glfw.cpp
 	backends/imgui_impl_opengl3.cpp
+	misc/cpp/imgui_stdlib.cpp
 )
 target_include_directories(imgui PUBLIC .)
 target_link_libraries(imgui PRIVATE glfw glad ${APP_SERVICES_LIBRARY} ${COCOA_LIBRARY})
